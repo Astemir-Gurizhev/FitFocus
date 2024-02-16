@@ -1,0 +1,372 @@
+body {
+  font-family: "Gilroy";
+}
+body.active {
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.89);
+}
+.burger {
+  cursor: pointer;
+  padding: 20px;
+  display: none;
+}
+.bur {
+  transition: all 0.6s ease 0s;
+
+  position: relative;
+  background: black;
+  width: 40px;
+  height: 2px;
+  cursor: pointer;
+}
+.bur::after {
+  transition: all 0.6s ease 0s;
+  content: "";
+  position: absolute;
+  top: 8px;
+  background: black;
+  width: 40px;
+  height: 2px;
+}
+.bur::before {
+  transition: all 0.6s ease 0s;
+  content: "";
+  position: absolute;
+  top: -8px;
+  background: black;
+  width: 40px;
+  height: 2px;
+}
+.bur.active {
+  background: none;
+}
+.bur.active::before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.bur.active::after {
+  transform: rotate(-45deg);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 150px;
+}
+
+.header__menu.active {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-top: 150px;
+  background: rgb(210, 172, 111);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.header__menu-link {
+  transition: all 0.6s ease 0s;
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+}
+.header__menu-link.active {
+  color: rgb(223, 156, 63);
+}
+.header__menu-link:hover {
+  color: rgb(223, 156, 63);
+}
+.main {
+  flex-grow: 1;
+}
+
+.first {
+  padding-top: 340px;
+  padding-bottom: 150px;
+  background: #2f2f2f;
+  background-size: cover;
+  filter: brightness(90%);
+}
+.first__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.first__img {
+  width: 500px;
+  border-radius: 30px;
+}
+.first__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first__title {
+  color: white;
+  font-weight: 900;
+  font-size: 84px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.first__subtitle {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-size: 44px;
+  margin-bottom: 70px;
+}
+.first__btn {
+  transition: all 0.3s ease 0s;
+  padding: 20px 80px;
+  max-width: 400px;
+  width: 100%;
+  background: rgb(223, 156, 63);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.first__btn:hover {
+  background: rgb(177, 124, 50);
+}
+
+.advantages {
+  padding: 96px 0;
+}
+
+.advantages__title {
+  color: black;
+  font-weight: 900;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.advantages__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.advantages__card {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.advantages__card-img {
+  transition: all 0.3s ease 0s;
+
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 200px;
+}
+.advantages__card-img:hover {
+  transform: scale(1.1);
+}
+.advatages__card-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.advantages__card-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.second {
+  background: url("../images/second/1.jpg") center center no-repeat;
+  padding: 300px 0px;
+}
+
+.testimonials {
+  padding: 90px 0;
+}
+
+.testimonials__title {
+  color: black;
+  font-weight: 900;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.testimonials__row {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.testimonials__post {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.testimonials__post-img {
+  width: 200px;
+  border-radius: 50px;
+}
+.testimonials__post-info {
+}
+.post__info-name {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.post__info-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer {
+  padding: 76px 0;
+  background: black;
+}
+
+.footer__title {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 20px;
+}
+.footer__row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.footer__terms {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.footer__privacy {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.footer__lic {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1190px) {
+  .header__menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .header__menu-link {
+    color: black;
+    font-size: 20px;
+  }
+  .header__menu-link.active {
+    color: black;
+  }
+  .header__row {
+    margin-inline: 20px;
+  }
+  .header__logo {
+    position: relative;
+    width: 100px;
+    z-index: 10;
+  }
+
+  .first__row {
+    flex-direction: column;
+    margin-inline: 20px;
+  }
+  .first {
+    padding-top: 170px;
+    padding-bottom: 60px;
+  }
+
+  .first__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .first__subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .first__img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .first__btn {
+    max-width: 250px;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-inline: 20px;
+  }
+  .advantages__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .advantages__row {
+    flex-direction: column;
+  }
+
+  .testimonials {
+    margin-inline: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .testimonials__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .testimonials__row {
+    flex-direction: column;
+  }
+  .testimonials__post {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,117 @@
+.contacts {
+  padding-top: 220px;
+  padding-bottom: 30px;
+}
+.contacts__title {
+  color: black;
+  font-weight: 900;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contacts__form {
+  margin-bottom: 50px;
+  margin-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.contacts__form button {
+  position: static;
+}
+
+.contacts__form textarea {
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  min-height: 130px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.contacts__form-inputs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts__form-inputs input {
+  padding: 20px;
+  width: 400px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.contacts__form-inputs input::placeholder,
+textarea::placeholder {
+  color: black;
+}
+
+.contacts__btn {
+  transition: all 0.3s ease 0s;
+  padding: 20px 80px;
+  max-width: 300px;
+  width: 100%;
+  background: rgb(223, 156, 63);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.checkbox {
+  text-align: center;
+}
+
+.contacts__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__number {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+.contacts__email {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+.contacts__adress {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+@media (max-width: 1190px) {
+  .contacts {
+    padding-top: 170px;
+    padding-bottom: 60px;
+    margin-inline: 20px;
+  }
+  .contacts__title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  .contacts__form-inputs input {
+    width: 300px;
+  }
+  .contacts__number {
+    font-size: 16px;
+  }
+  .contacts__email {
+    font-size: 16px;
+  }
+  .contacts__adress {
+    font-size: 16px;
+  }
+}
