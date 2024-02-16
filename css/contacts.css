@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 220px;
+  padding-top: 150px;
   padding-bottom: 30px;
 }
 .contacts__title {
@@ -30,6 +30,7 @@
   min-height: 130px;
   border-radius: 20px;
   font-weight: 700;
+  resize: none;
 }
 
 .contacts__form-inputs {
@@ -94,7 +95,7 @@ textarea::placeholder {
 
 @media (max-width: 1190px) {
   .contacts {
-    padding-top: 170px;
+    padding-top: 150px;
     padding-bottom: 60px;
     margin-inline: 20px;
   }

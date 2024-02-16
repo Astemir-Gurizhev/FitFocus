@@ -14,9 +14,9 @@ body.active {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.89);
+  background: rgba(255, 255, 255, 1);
 }
 .burger {
   cursor: pointer;
@@ -70,7 +70,7 @@ body.active {
   align-items: center;
 }
 .header__logo {
-  width: 150px;
+  width: 80px;
 }
 
 .header__menu.active {
@@ -108,7 +108,7 @@ body.active {
 }
 
 .first {
-  padding-top: 340px;
+  padding-top: 240px;
   padding-bottom: 150px;
   background: #2f2f2f;
   background-size: cover;
@@ -235,8 +235,7 @@ body.active {
   width: 200px;
   border-radius: 50px;
 }
-.testimonials__post-info {
-}
+
 .post__info-name {
   margin-bottom: 10px;
   font-weight: 600;
@@ -311,7 +310,7 @@ body.active {
     margin-inline: 20px;
   }
   .first {
-    padding-top: 170px;
+    padding-top: 180px;
     padding-bottom: 60px;
   }
 

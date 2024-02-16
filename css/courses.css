@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 220px;
+  padding-top: 150px;
   padding-bottom: 30px;
 }
 
@@ -13,7 +13,7 @@
 
 .catalog__row {
   display: flex;
-  flex-direction: column;
+  
 
   align-items: center;
   justify-content: space-between;
@@ -38,7 +38,7 @@
 .catalog__card-img {
   border-radius: 10px;
   margin-bottom: 30px;
-  width: 400px;
+  width: 300px;
 }
 
 .catalog__card-title {
@@ -56,9 +56,12 @@
 
 @media (max-width: 1190px) {
   .catalog {
-    padding-top: 170px;
+    padding-top: 150px;
     padding-bottom: 60px;
     margin-inline: 20px;
+  }
+  .catalog__row {
+    flex-direction: column;
   }
   .catalog__title {
     font-size: 35px;
