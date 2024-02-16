@@ -190,7 +190,6 @@ body.active {
   border-radius: 10px;
   margin-bottom: 30px;
   width: 200px;
-  height: 170px;
 }
 .advantages__card-img:hover {
   transform: scale(1.1);
